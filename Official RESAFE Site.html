@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+ <link rel="icon" type="image/png" href="icon.png">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReSAFE - Browse While Protected</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; }
+        header { background: #007BFF; color: white; padding: 20px; font-size: 24px; }
+        section { padding: 40px; max-width: 800px; margin: auto; }
+        .feature { background: #f4f4f4; padding: 20px; margin: 10px 0; border-radius: 10px; }
+        .faq { text-align: left; }
+        .faq h3 { cursor: pointer; }
+        .answer { display: none; padding-left: 10px; }
+        footer { background: #333; color: white; padding: 10px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <header>ReSAFE - protect your browser</header>
+    
+    <section>
+        <h2>Why Choose ReSAFE?</h2>
+        <p>Protect yourself from dangerous websites with fast blocking known dangerous sites.</p>
+    </section>
+    
+    <section>
+        <h2>Features</h2>
+        <div class="feature">✔ Real-time detection and blocking</div>
+        <div class="feature">✔ Lightweight and fast performance</div>
+        <div class="feature">✔ For free to install extension</div>
+        <div class="feature">✔ has free adblocker</div>
+    </section>
+    
+    <section class="faq">
+        <h2>FAQ</h2>
+        <h3 onclick="toggleAnswer(0)">How does ReSAFE work?</h3>
+        <p class="answer">ReSAFE scans websites in real-time and blocks known malicious domains.</p>
+        
+        <h3 onclick="toggleAnswer(1)">Is ReSAFE free?</h3>
+        <p class="answer">Yes, ReSAFE is completely free to use.</p>
+        
+        <h3 onclick="toggleAnswer(2)">does it block malicious sites?</h3>
+        <p class="answer">Yes, it protects your browser.</p>
+        <h3 onclick="toggleAnswer(3)">why do i need install this?</h3>
+        <p class="answer">blocks malicious websites domains, typo protection.</p>
+    </section>
+    
+    <footer>
+        &copy; 2025 ReSAFE. All Rights Reserved.
+    </footer>
+    
+    <script>
+        function toggleAnswer(index) {
+            var answers = document.querySelectorAll('.answer');
+            answers[index].style.display = (answers[index].style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
